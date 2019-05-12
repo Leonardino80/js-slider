@@ -3,11 +3,17 @@
   border:0;
   padding:0;
   box-sizing: border-box;
+  font-size: arial;
 }
 
 
 img{
-  width: 700px;
+  width: 600px;
+  display: none;
+}
+
+.visibile{
+  display: block;
 }
 
 .container{
@@ -16,45 +22,161 @@ img{
 }
 
 .wrapper {
-display: flex;
-align-items: center;
-width: 600px;
-border-radius: 20px;
-background-color:rgba(189, 195, 199, 1);
-overflow: hidden;
-display: none;
-}
-
-.wrapper.visible{
-  display: block;
+    display: flex;
+  align-items: center;
+  width: 600px;
+  height: 450px;
+  background-color:rgba(189, 195, 199, 1);
+  overflow: hidden;
 }
 
 .slider{
   position: relative;
   width: 600px;
-  margin:0 auto;
+  margin: 20px auto;
 }
 
-.next{
+.next,.prev{
   z-index: 100;
   position: absolute;
   top: 50%;
-  right: 3%;
-  transform: translateY(-50%);
-  color: white;
-}
-
-.prev{
-  z-index: 100;
-  position: absolute;
-  top: 50%;
-  left: 3%;
   transform: translateY(-50%);
   color: white;
   cursor: pointer;
 }
 
-.fa-caret-right g g path {
-  stroke: black;
-  stroke-width: 10;
+.prev{
+  left: 2%;
+}
+
+.next{
+  right: 2%;
+}
+
+.pianta{
+  margin:10px auto;
+  position: relative;
+  width: 200px;
+  height: 180px;
+  border: 1px solid red;
+  /* width: 252px;
+  height: 157px;
+  background-image: url(https://drive.google.com/uc?export=view&id=1RWgg-mD2LLsY133ik2wzMb_6xqGgkGco);
+  background-size: contain; */
+}
+
+
+.titolo{
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-size: 12px;
+  text-align: right;
+}
+
+.locale{
+  background-color: yellow;
+  text-align: center;
+  border: 1px solid black;
+  font-style: arial;
+}
+
+.balcone1{
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  width: 80px;
+  height: 15px;
+  background-color: lightyellow;
+}
+
+.balcone2{
+  position: absolute;
+  top: 125px;
+  left: 30px;
+  width: 70px;
+  height: 15px;
+  background-color: lightyellow;
+}
+
+.stanza1{
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+}
+.stanza2{
+  position: absolute;
+  top: 30px;
+  left: 60px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+}
+
+.stanza3{
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  height: 50px;
+  width: 40px;
+  line-height: 50px;
+}
+
+.stanza4{
+  position: absolute;
+  top: 85px;
+  left: 100px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+}
+
+.stanza5{
+  position: absolute;
+  top: 85px;
+  left: 70px;
+  height: 40px;
+  width: 30px;
+  line-height: 40px;
+}
+
+.cucina{
+  position: absolute;
+  top: 85px;
+  left: 30px;
+  height: 40px;
+  width: 20px;
+  line-height: 40px;
+}
+
+.bagno1{
+  position: absolute;
+  top: 85px;
+  left: 50px;
+  height: 40px;
+  width: 20px;
+  line-height: 40px;
+}
+
+.bagno2{
+
+  position: absolute;
+  top: 70px;
+  left: 110px;
+  height: 15px;
+  width: 30px;
+  line-height: 15px;
+  font-size: 15px;
+}
+
+.corridoio{
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  height: 15px;
+  width: 90px;
+  background-color: lightyellow;
 }
