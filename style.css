@@ -3,7 +3,7 @@
   border:0;
   padding:0;
   box-sizing: border-box;
-  font-size: arial;
+  font-family: arial;
 }
 
 
@@ -59,10 +59,6 @@ img{
   width: 200px;
   height: 180px;
   border: 1px solid red;
-  /* width: 252px;
-  height: 157px;
-  background-image: url(https://drive.google.com/uc?export=view&id=1RWgg-mD2LLsY133ik2wzMb_6xqGgkGco);
-  background-size: contain; */
 }
 
 
@@ -78,7 +74,8 @@ img{
   background-color: yellow;
   text-align: center;
   border: 1px solid black;
-  font-style: arial;
+  font-size: 10px;
+  letter-spacing: -1px
 }
 
 .balcone1{
@@ -97,6 +94,7 @@ img{
   width: 70px;
   height: 15px;
   background-color: lightyellow;
+  border-width: 0 1px 1px 1px;
 }
 
 .stanza1{
@@ -106,6 +104,7 @@ img{
   height: 40px;
   width: 40px;
   line-height: 40px;
+  border-width: 0 0 0 1px;
 }
 .stanza2{
   position: absolute;
@@ -114,6 +113,7 @@ img{
   height: 40px;
   width: 40px;
   line-height: 40px;
+  border-width: 0 1px 0 1px;
 }
 
 .stanza3{
@@ -123,6 +123,7 @@ img{
   height: 50px;
   width: 40px;
   line-height: 50px;
+  border-width: 1px 1px 0 0;
 }
 
 .stanza4{
@@ -132,6 +133,7 @@ img{
   height: 40px;
   width: 40px;
   line-height: 40px;
+  border-width: 0 1px 1px 0;
 }
 
 .stanza5{
@@ -141,6 +143,8 @@ img{
   height: 40px;
   width: 30px;
   line-height: 40px;
+  font-size: 8px;
+  border-width: 0 1px 1px 0;
 }
 
 .cucina{
@@ -150,6 +154,8 @@ img{
   height: 40px;
   width: 20px;
   line-height: 40px;
+  font-size: 8px;
+  border-width: 0 1px 1px 1px ;
 }
 
 .bagno1{
@@ -159,17 +165,19 @@ img{
   height: 40px;
   width: 20px;
   line-height: 40px;
+  font-size: 8px;
+  border-width: 0 1px 1px 0;
 }
 
 .bagno2{
-
   position: absolute;
   top: 70px;
   left: 110px;
   height: 15px;
   width: 30px;
   line-height: 15px;
-  font-size: 15px;
+  font-size: 8px;
+  border-width: 1px 1px 1px 0;
 }
 
 .corridoio{
@@ -179,4 +187,41 @@ img{
   height: 15px;
   width: 90px;
   background-color: lightyellow;
+}
+
+.fa-location-arrow{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: black;
+  transform: rotate(180deg);
+}
+
+.fa-caret-up{
+  position: absolute;
+  top: 82px;
+  left: 18px;
+  color: black;
+}
+
+.pianta span:last-child {
+  position: absolute;
+  top: 95px;
+  left: 3px;
+  color: black;
+  font-size: 8px;
+  letter-spacing: -1px;
+}
+
+#nord {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  color: black;
+  font-size: 12px;
+}
+
+.indicatore{
+  background-color: green;
+  z-index: 100;
 }
